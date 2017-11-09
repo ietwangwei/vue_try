@@ -128,10 +128,10 @@ vue :{
 		}
 	},
 	踩过的坑:{
-		1: 在.vue组件里面写template的时候  一定要在html外面包裹一层div,否则会报错,
+		1: 在.vue组件里面写template的时候  最好要在模板外面包裹一层div,否则会报错,类似<template><div></div></template>
 		2: v-for数组的时候只有两个参数(item,index) v-for对象的时候有三个参数,
 		3: 引入store时需要  new Vuex.Store()  这里Store是大写,
 		4: 对象展开符(...),要安装transform-object-rest-spread这个插件,在babelrc里面使用,
-		5: export default 后面可以是变量也可以是对象 详见MSP的store.js,export default store
+		5: export default 后面可以是变量也可以是对象 详见本项目的store.js,export default store
 	}
 }
